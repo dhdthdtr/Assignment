@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignment">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Bakery App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment">
+        <activity
+            android:name=".AnimationTask"
+            android:label="Animation"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerInformation"
+            android:exported="false"
+            android:label="Customer Information" />
+        <activity
+            android:name=".OrderSummary"
+            android:exported="false"
+            android:label="Order Summary" />
+        <activity
+            android:name=".OptionMenu"
+            android:exported="false"
+            android:label="Optionals" />
+        <activity
+            android:name=".Order"
+            android:exported="false"
+            android:label="Payment" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

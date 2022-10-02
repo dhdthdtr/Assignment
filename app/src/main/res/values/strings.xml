@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string-array name="paymentMethod">
+        <item>Credit Card</item>
+        <item>Cash on Delivery</item>
+        <item>Check</item>
+        <item>Purchase Order</item>
+        <item>Paypal</item>
+        <item>Bank Transfer</item>
+    </string-array>
+</resources>

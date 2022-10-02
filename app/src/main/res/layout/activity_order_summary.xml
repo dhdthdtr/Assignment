@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    tools:context=".OrderSummary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableTint="#F51720"
+                android:text=" Customer Info"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:background="@drawable/border_bottom"/>
+
+            <TextView
+                android:id="@+id/summary_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Name: "/>
+
+            <TextView
+                android:id="@+id/summary_customer_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Email: "/>
+
+            <TextView
+                android:id="@+id/summary_customer_phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number: "/>
+
+            <TextView
+                android:id="@+id/summary_customer_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address: "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_cake_24"
+                android:drawableTint="#F51720"
+                android:text=" Bakery Products"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:background="@drawable/border_bottom"/>
+
+            <TextView
+                android:id="@+id/summary_productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: "/>
+
+            <TextView
+                android:id="@+id/summary_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity: "/>
+
+            <TextView
+                android:id="@+id/summary_flavor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flavor: "/>
+
+            <TextView
+                android:id="@+id/summary_icing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Icing: "/>
+
+            <TextView
+                android:id="@+id/summary_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size: "/>
+
+            <TextView
+                android:id="@+id/summary_eventType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Type: "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_local_shipping_24"
+                android:drawableTint="#F51720"
+                android:text=" Order"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:background="@drawable/border_bottom"/>
+
+            <TextView
+                android:id="@+id/summary_order_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of Order: "/>
+
+            <TextView
+                android:id="@+id/summary_order_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Date: "/>
+
+            <TextView
+                android:id="@+id/summary_order_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Time: "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_attach_money_24"
+                android:drawableTint="#F51720"
+                android:text=" Payment Info"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:background="@drawable/border_bottom"/>
+
+            <TextView
+                android:id="@+id/summary_paymentMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Method of Payment: "/>
+
+            <TextView
+                android:id="@+id/summary_productCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Cost: "/>
+
+            <TextView
+                android:id="@+id/summary_shippingCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shipping Cost: "/>
+
+            <TextView
+                android:id="@+id/summary_totalCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Cost: "/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_mainpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3D5B59"
+            android:text="Go back to Main Page"/>
+    </LinearLayout>
+</ScrollView>

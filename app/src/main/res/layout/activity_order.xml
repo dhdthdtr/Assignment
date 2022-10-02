@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    tools:context=".Order">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/light_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Type of Order"/>
+
+            <RadioGroup
+                android:id="@+id/rg_ordertype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Delivery"/>
+                <RadioButton
+                    android:id="@+id/rb_pickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Pickup"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Pick up/ Delivery Date"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray"
+                android:text="Date"/>
+            <EditText
+                android:id="@+id/edittext_date"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:inputType="date"
+                android:textSize="15dp"
+                android:focusable="false"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                android:hint="dd/mm/yyyy"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Pick up/ Delivery Time"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray"
+                android:text="Time"/>
+
+            <EditText
+                android:id="@+id/edittext_time"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Method of Payment"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinner_paymentMethod"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Would you like to write a message? if yes, please enter the message:"/>
+
+            <EditText
+                android:id="@+id/customer_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:hint="Your answer"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Do you have any additional information or instructions?"/>
+
+            <EditText
+                android:id="@+id/customer_addInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:hint="Your answer"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Event Type"/>
+
+            <RadioGroup
+                android:id="@+id/rg_eventtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_wedding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Wedding"/>
+                <RadioButton
+                    android:id="@+id/rb_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Birthday"/>
+                <RadioButton
+                    android:id="@+id/rb_anniversary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Anniversary"/>
+                <RadioButton
+                    android:id="@+id/rb_graduation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Graduation"/>
+                <RadioButton
+                    android:id="@+id/rb_noevent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="No Event"/>
+                <RadioButton
+                    android:id="@+id/rb_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Other"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_orderNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="Order Now"
+            android:backgroundTint="#3D5B59"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</ScrollView>
